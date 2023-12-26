@@ -1,0 +1,423 @@
+body {
+    margin: 0;
+    background: white;
+    overflow: hidden;
+}
+
+#searchCar {
+    background: gray;
+    padding: 10px;
+    width: 250px;
+}
+#searchBy {
+    user-select: none;
+    width: 103px;
+    height: 32px;
+    float: left;
+    margin-top: 9px;
+    margin-left: 10px;
+}
+#keyBoxItemNotes {
+    color: 'red';
+    font-style: italic;
+    font-weight: bold;
+}
+#clearButton {
+    margin-top: 10px;
+    background:white;
+    float: left;
+    width: 100px;
+    height: 30px;
+    top: 140px;
+    text-align: center;
+    line-height: 30px;
+}
+.button {
+    cursor: pointer;
+    user-select: none;
+}
+
+#keyBoxes {
+    cursor: pointer;
+}
+.keyboxHolder {
+    border: 3px solid black;
+    background: silver;
+    margin: 10px;
+    padding: 10px;
+}
+.keyboxHolder:hover {
+    background: lightgray;
+}
+.label {
+    font-weight: bold;
+    display: block;
+    float: left;
+    width: 50px;
+}
+#topBar {
+    position: absolute;
+    width: 100%;
+    height: 124px;
+    background: gray;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
+    z-index: 3;
+}
+#selectCar {
+    position: absolute;
+    top: 0px;
+    left: 250px;
+    overflow-y: auto;
+    height: 124px;
+}
+.carOption {
+    float: left;
+    border: 1px solid black;
+    background: white;
+    padding: 5px;
+    margin: 2px;
+    user-select: none;
+    cursor: pointer;
+}
+.carOption:hover {
+    background: lightgray;
+}
+
+#leftBar {
+    position: absolute;
+    left: 0px;
+    top: 124px;
+    width: 300px;
+    z-index: 2;
+	overflow-y: auto;
+    background: teal;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+.keyBox {
+    width: 20px;
+    height: 10px;
+    max-width: 20px;
+    max-height: 10px;
+    line-height: 10px;
+    text-align: center;
+    background: gray;
+    cursor: pointer;
+    font-weight: bold;
+    user-select: none;
+}
+.keyBoxSelected {
+    border: 1px solid white;
+    width: 20px;
+    max-width: 20px;
+    max-height: 10px;
+    line-height: 10px;
+    text-align: center;
+    font-weight: bold;
+    height: 10px;
+    cursor: pointer;
+}
+.keyBoxSelected:hover {
+
+    border: 1px solid white !important;
+}
+.keyBox:hover {
+
+    border: 1px solid white !important;
+}
+.keyBoxNumber {
+    user-select: none;
+    text-align: center;
+}
+.keyBoxLetter {
+    user-select: none;
+    text-align: center;
+}
+#tableMap {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    background: lightcoral;
+    padding: 10px;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    border-top-left-radius: 5px;
+}
+
+#body {
+    position: absolute;
+    left: 300px;
+    top: 124px;
+}
+#noCar {
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    text-align: center;
+    height: 50px;
+    font-size: 50px;
+    text-shadow: 1px 1px 2px black;
+    user-select: none;
+}
+#pullUp {
+    display: none;
+    margin: auto;
+    position: absolute;
+    top: 0; left: 0; bottom: 0; right: 0;
+
+    width: 80%;
+    height: 80%;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+    background: lightgrey;
+    border-radius: 5px;
+}
+#identification {
+    font-weight: bold;
+    text-align: center;
+    font-size: 30px;
+    line-height: 50px; 
+}
+#leftSide {
+    position: absolute;
+    font-size: 20px;
+    width: 50%;
+    height: 100%;
+    overflow: hidden;
+}
+#puLink {
+    cursor: pointer;
+    color: blue;
+    text-align: center;
+    left: 50%;
+    font-style: italic;
+}
+#puLink:hover {
+    color: lightblue;
+}
+#amountGroup {
+	float: left;
+}
+#puAmount {
+	float: left;
+}
+.amountBtn {
+	cursor: pointer;
+	width: 20px;
+	height: 20px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	user-select: none;
+	text-align: center;
+	line-height: 20px;
+	float: left;
+	margin-left: 5px;
+}
+.amountBtn:hover {
+	background: lightgray;
+}
+.amountBtn2 {
+	cursor: pointer;
+	width: 80px;
+	height: 20px;
+	background: white;
+	border: 1px solid black;
+	border-radius: 3px;
+	user-select: none;
+	text-align: center;
+	line-height: 20px;
+	float: left;
+	margin-left: 5px;
+}
+.amountBtn2:hover {
+	background: lightgray;
+}
+#puExtraStats {
+    width: 60%;
+    bottom: 20px;
+    left: 20px;
+    position: absolute;
+    height: 30%;
+    background: #faa;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#topBar3 {
+    width: 100%;
+    height: 30px;
+    background: #f88;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+#puESList {
+    padding: 5px;
+    overflow: auto;
+    max-height: 70%;
+}
+#puIList {
+    padding: 5px;
+    overflow: auto;
+    max-height: 70%;
+}
+#keyList {
+    width: 60%;
+    top: 80px;
+    left: 20px;
+    position: absolute;
+    height: 45%;
+    background: #aaf;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+#topBar4 {
+    width: 100%;
+    height: 30px;
+    background: #88f;
+    text-align: center;
+    line-height: 30px;
+    font-weight: bold;
+}
+#rightSide {
+    position: absolute;
+    left: 50%;
+    height: 100%;
+    width: 50%;
+    display: inline-block;
+    border-left: 3px solid gray;
+}
+#topBar2 {
+    height: 50px;
+    width: 100%;
+    background: lightblue;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+}
+#worksOn {
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+
+}
+#worksNotes {
+	font-style: italic;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+}
+#worksOnList {
+    margin: 10px;
+    font-size: 18px;
+    overflow-y: auto;
+    height: 80%;
+    background: #ddd;
+    padding: 5px;
+    border-radius: 5px;
+
+}
+
+#puGoToCCR {
+	cursor: pointer;
+	background: white;
+	user-select: none;
+	border-radius: 2px;
+	border: 2px solid black;
+	width: 100px;
+	text-align: center;
+}
+#puGoToCCR:hover {
+	background: lightgray;
+}
+#keyIMG {
+    position: absolute;
+	width: 30%;
+    right: 20px;
+    bottom: 20px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+}
+
+#remoteViewer {
+    display: none;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: grey;
+    z-index: 100;
+}
+#remoteViewerButton {
+	position: absolute;
+	bottom: 0px;
+	left: 300px;
+	width: 200px;
+    height: 25px;
+	padding: 10px;
+    cursor: pointer;
+    font-size: large;
+    user-select: none;
+    line-height: 25px;
+    text-align: center;
+	background: lightgreen;
+    z-index: 101;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+}
+#remoteViewerButton:hover {
+    background: rgb(103, 196, 103);
+}
+
+#statsPopUp {
+	position: absolute;
+	bottom: 40px;
+	left: 300px;
+	width: 200px;
+	padding: 10px;
+	background: lightblue;
+    box-shadow: rgba(0, 0, 0, 0.3) 0px 19px 38px, rgba(0, 0, 0, 0.22) 0px 15px 12px;
+	
+}
+.statText {
+	font-size: 20px;
+}
+
+#remoteHolder {
+    border: 3px solid black;
+    border-radius: 5px;
+}
+#remoteHolder:hover {
+    border: 3px solid gold;
+}
+
+#remoteBottom {
+    display: none;
+    height: 45px;
+    bottom: 0px;
+    position: absolute;
+    background: lightblue;
+    width: 100%;
+    z-index: 100;
+}
+
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background: #f1f1f1; 
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #888; 
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; 
+  }
+
+  #keyBoxLocation {
+    font-weight: bold;
+  }
